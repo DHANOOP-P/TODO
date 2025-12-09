@@ -26,8 +26,8 @@ const Header = () => {
 
 
         {/* menu navigation */}
-           <div className='lg:flex hidden space-x-30  my-6  '>
-               {["Home","About","Contact","","","",""].map((item,index) => (
+           <div className=' lg:flex hidden space-x-30  my-6  '>
+               {["Home","About","Contact"].map((item,index) => (
                  <motion.a
                   initial={{ opacity: 0, y: -20 }}
                   animate={{opacity: 1, y: 0}}
@@ -39,11 +39,12 @@ const Header = () => {
                    
             }}
                  key={item}
-                 className='relative text-gray-500 dark:text-gray-200 hover:text-violet-600 dark:hover:text-violet-400 font-medium transition-colors duration-300 group'
+                 className='my-3 flex justify-center relative text-gray-500 dark:text-gray-200 hover:text-violet-600 dark:hover:text-violet-400 font-medium transition-colors duration-300 group'
                  href="#">
                     {item}
                  </motion.a>
                ))}
+               <div className='w-105'></div>
            </div>
 
           
